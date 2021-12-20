@@ -12,64 +12,116 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
+    >
       <fieldset id="firstField" class="field">
         <legend>Personal Information</legend>
         <div class="box">
           <label for="surName">Surname:</label>
-          <input type="text" id="surName" name="surName"
-        minlength="1" autocomplete="off">
+          <input
+            type="text"
+            id="surName"
+            name="surName"
+            minlength="1"
+            autocomplete="off"
+          >
         </div>
         <div class="box up">
           <label for="myName">Name:</label>
-          <input type="text" id="myName" name="myName"
-        minlength="1" autocomplete="off">
+          <input
+            type="text"
+            id="myName"
+            name="myName"
+            minlength="1"
+            autocomplete="off"
+          >
         </div>
         <div class="box up">
           <label for="age">How old are You?</label>
-          <input type="number" id="age" name="age"
-          min="0" max="100" value="12">
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="0"
+            max="100"
+            value="12"
+          >
         </div>
         <div class="box up">
           <label for="birth">Full date of birth:</label>
-          <input type="date" id="birth" name="birth">
+          <input
+            type="date"
+            id="birth"
+            name="birth"
+          >
         </div>
         <div class="up">
           <label for="agreement">I accept the term of the agreement</label>
-          <input type="checkbox" id="agreement" name="agreement"
-          required>
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+          >
         </div>
       </fieldset>
       <fieldset class="field">
         <legend>Registration</legend>
         <div class="box">
           <label for="mail">E-mail:</label>
-          <input type="email" id="mail" placeholder="email@example.com"
-          name="email">
+          <input
+            type="email"
+            id="mail"
+            placeholder="email@example.com"
+            name="email"
+          >
         </div>
         <div class="box up">
           <label for="pass">Password:</label>
-          <input type="password" id="pass" name="pass"
-        minlength="8" maxlength="8">
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            minlength="8"
+            maxlength="8"
+          >
         </div>
       </fieldset>
       <fieldset class="field">
         <legend>An interesting fact about you!</legend>
         <div class="zero">
           <p>Do you love cats?</p>
-          <input type="radio" id="confirm" name="radioBut">
+          <input
+            type="radio"
+            id="confirm"
+            name="radioBut"
+          >
           <label class="lab" for="confirm">Yes</label>
-          <input type="radio" id="reject" name="radioBut">
+          <input
+            type="radio"
+            id="reject"
+            name="radioBut"
+          >
           <label class="lab" for="reject">No</label>
         </div>
         <div class="up">
           <label for="colorPicker">What is your favorite color?</label>
-          <input type="color" id="colorPicker" class="closer">
+          <input
+            type="color"
+            id="colorPicker"
+            class="closer"
+          >
         </div>
         <div class="box up">
           <label for="pickTime">What time do you go ro bed?</label>
-          <input type="time" id="pickTime" name="time"
-          width="80px">
+          <input
+            type="time"
+            id="pickTime"
+            name="time"
+          >
         </div>
         <div class="up">
           <label for="favoriteCar">What are your favorite brand of cars?</label>
@@ -81,9 +133,15 @@
         </div>
         <div class="up">
           <label for="rate">How do you rate our work?</label>
-          <input type="range" id="rate" name="rate"
-          min="0" max="10" value="0"
-          class="closer">
+          <input
+            type="range"
+            id="rate"
+            name="rate"
+            min="0"
+            max="10"
+            value="0"
+            class="closer"
+          >
         </div>
       </fieldset>
       <fieldset class="field">
@@ -100,8 +158,7 @@
           </select>
         </div>
       </fieldset>
-      <button type="submit" id="submition" name="submition"
-      onsubmit="onSubmit()">Submit</button>
+      <button type="submit" id="submition" name="submition">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
